@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container title">
+            <h1>JavaScript mini project</h1>
+            <img src="./images/icons/moon.svg" alt="moon" id="mode">
+        </section>
+
+
+        <section class="container">
+            <div class="showcase">
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/Add2numbers/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/add2numbers.png" alt="add2numbers">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/Add2numbers/" target="_blank" class="link">
+                                <h2>Add 2 Numbers</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/calculator/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/calculator.jpg" alt="calculator">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/calculator/" target="_blank" class="link">
+                                <h2>calculator</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/NumberTable/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/numbertable.jpg" alt="numbertable">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/NumberTable/" target="_blank" class="link">
+                                <h2>Number table</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/OddOrEven/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/oddoreven.jpg" alt="oddoreven">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/OddOrEven/" target="_blank" class="link">
+                                <h2>Odd or Even</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/PrintAMessage/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/printamessage.jpg" alt="printamessage">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/PrintAMessage/" target="_blank" class="link">
+                                <h2>Print a Message</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://siddharthv97.github.io/todo-app/" target="_blank">
+                        <div class="card_img">
+                            <img src="./images/img/todo.jpg" alt="todo">
+                        </div>
+                        <div class="card_title">
+                            <a href="https://siddharthv97.github.io/todo-app/" target="_blank" class="link">
+                                <h2>todo app</h2>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <p>All Projects Made by <a href="https://www.instagram.com/iamsiddharthv/" target="_blank"><span
+                        class="copyright">Siddharth Vishwakarma</span></a></p>
+        </footer>
+
+    </main>
+
+    <script>
+        const mode = document.getElementById("mode");
+
+        mode.addEventListener("click", () => {
+            const body = document.body;
+            body.classList.toggle("dark-mode")
+
+            if (body.classList.contains("dark-mode")) {
+                mode.src = "./images/icons/sun.svg";
+                mode.style.filter = "invert(1)";
+            } else {
+                mode.src = "./images/icons/moon.svg";
+                mode.style.filter = "none";
+            }
+
+
+        });
+    </script>
+</body>
+
+</html>
